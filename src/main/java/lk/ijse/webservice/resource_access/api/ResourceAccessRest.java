@@ -51,7 +51,7 @@ public class ResourceAccessRest extends HttpServlet {
         String json = gson.toJson(message);
 
         System.out.println("Session Key : " + req.getSession().getAttribute("session_key"));
-        System.out.println("Application Scope Name "+req.getSession().getServletContext().getAttribute("name"));
+        System.out.println("Application Scope Name " + req.getSession().getServletContext().getAttribute("name"));
 
 
         res.setContentType("application/json");
